@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
+    <link href="../Css/index.css" rel="stylesheet">
+    <title>Document</title>
+</head>
+<body class="my-auto karantina-bold">
+    <section class="m-5">
+        <div class="text-2xl">
+            <div class="flex flex-wrap justify-between bg-yellow-200 p-2 rounded">
+                <h1 class="my-auto text-3xl text-red-500 cursor-pointer monoton-regular">DavidL.</h1>
+                <div class="my-auto">
+                    <ul class="lg:flex flex-wrap hidden">
+                        <li class="pr-5"><a class="my-auto border-b-2 hover:border-red-900 text-yellow-900 pb-1" href="">Home</a></li>
+                        <li class="pr-5"><a class="my-auto border-b-2 hover:border-red-900 text-yellow-900 pb-1" href="">About</a></li>
+                        <li class="pr-5"><a class="my-auto border-b-2 hover:border-red-900 text-yellow-900 pb-1" href="">Service</a></li>
+                        <li class="pr-5"><a class="my-auto border-b-2 hover:border-red-900 text-yellow-900 pb-1" href="">Contact</a></li>
+                        <li class="pr-5"><a class="my-auto border-b-2 hover:border-red-900 text-yellow-900 pb-1" href="">Projects</a></li>
+                    </ul>
+                </div>
+                <button class="my-auto lg:hidden px-3 text-pink-100" onclick="menuClick()">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="h-8 w-8">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
+                      </svg>
+                      
+                    </button>
+                <button class="px-3 hidden lg:block bg-yellow-600 rounded">
+                    <h2 class="text-yellow-100">
+                        Download CV
+                    </h2>
+                </button>
+            </div>
+            <div class="hidden w-1/2 bg-pink-700 mt-2 ml-44 float-right rounded absolute" id="mobileMenu">
+                <div class="my-auto lg:hidden">
+                    <ul class="flex flex-wrap flex-col ">
+                        <li class="pb-5 text-center"><a class="text-pink-100 pb-2" href="">Home</a></li>
+                        <li class="pb-5 text-center"><a class="text-pink-100 pb-2" href="">About</a></li>
+                        <li class="pb-5 text-center"><a class="text-pink-100 pb-2" href="">Service</a></li>
+                        <li class="pb-5 text-center"><a class="text-pink-100 pb-2" href="">Contact</a></li>
+                        <li class="pb-5 text-center"><a class="text-pink-100 pb-2" href="">Projects</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="mt-10">
+            <div class="lg:flex">
+                <div class="lg:w-1/2 w-full">
+                    <div class="mt-10 text-7xl lg:text-9xl ml-10">
+                        <h1>
+                            Hey, Hi
+                        </h1>
+                        <h1>
+                            I'm
+                        </h1>
+                        <h1>
+                            David Lawrence
+                        </h1>
+                        <h1 class="mb-10">
+                            Software Developer
+                        </h1>
+                    </div>
+                </div>
+                <div class="lg:w-1/2  w-full flex justify-center">
+                    <img src="./assets/young-man-animation-style-illustration-free-photo.jpg" alt="" class="rounded-2xl">
+                </div>
+            </div>
+        </div>
+    </section>
+    <script src="./js/index.js"></script>
+</body>
+</html> 
