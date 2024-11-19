@@ -1,22 +1,24 @@
-@import url('https://fonts.googleapis.com/css2?family=Karantina:wght@300;400;700&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Kavoon&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Monoton&display=swap');
 
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Teko:wght@300..700&display=swap');
 
-.karantina-bold {
-  font-family: "Karantina", system-ui;
-  font-weight: 700;
+.roboto-slab {
+  font-family: "Roboto Slab", serif;
+  font-optical-sizing: auto;
+  font-weight: 900;
   font-style: normal;
 }
-.kavoon-regular {
-  font-family: "Kavoon", serif;
-  font-weight: 400;
-  font-style: normal;
-}
-.monoton-regular {
-  font-family: "Monoton", sans-serif;
+.great-vibes-regular {
+  font-family: "Great Vibes", cursive;
   font-weight: 400;
   font-style: normal;
 }
 
-  
+.teko {
+  font-family: "Teko", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 900;
+  font-style: normal;
+}
+.text-shadow{box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;}

@@ -7,68 +7,85 @@
     <link href="../Css/index.css" rel="stylesheet">
     <title>Document</title>
 </head>
-<body class="my-auto karantina-bold">
-    <section class="m-5">
-        <div class="text-2xl">
-            <div class="flex flex-wrap justify-between bg-yellow-200 p-2 rounded">
-                <h1 class="my-auto text-3xl text-red-500 cursor-pointer monoton-regular">DavidL.</h1>
-                <div class="my-auto">
-                    <ul class="lg:flex flex-wrap hidden">
-                        <li class="pr-5"><a class="my-auto border-b-2 hover:border-red-900 text-yellow-900 pb-1" href="">Home</a></li>
-                        <li class="pr-5"><a class="my-auto border-b-2 hover:border-red-900 text-yellow-900 pb-1" href="">About</a></li>
-                        <li class="pr-5"><a class="my-auto border-b-2 hover:border-red-900 text-yellow-900 pb-1" href="">Service</a></li>
-                        <li class="pr-5"><a class="my-auto border-b-2 hover:border-red-900 text-yellow-900 pb-1" href="">Contact</a></li>
-                        <li class="pr-5"><a class="my-auto border-b-2 hover:border-red-900 text-yellow-900 pb-1" href="">Projects</a></li>
-                    </ul>
+<body class=" bg-indigo-50 roboto-slab">
+      <section class="mt-5">
+       <div class="mx-auto container ">
+        <div class="roboto-slab px-10 lg:px-0">
+            <div class="flex flex-wrap justify-between">
+                <div class="bg-blue-100 rounded-full lg:h-24 lg:w-24 h-24 w-24 cursor-pointer">
+                    <h2 class="great-vibes-regular lg:text-5xl text-3xl text-indigo-400 my-auto">David Lawrence</h2>
                 </div>
-                <button class="my-auto lg:hidden px-3 text-pink-100" onclick="menuClick()">
+                <div class="lg:hidden" onclick="menuClick()">
                     <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="h-8 w-8">
                         <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
                       </svg>
                       
-                    </button>
-                <button class="px-3 hidden lg:block bg-yellow-600 rounded">
-                    <h2 class="text-yellow-100">
-                        Download CV
-                    </h2>
-                </button>
-            </div>
-            <div class="hidden w-1/2 bg-pink-700 mt-2 ml-44 float-right rounded absolute" id="mobileMenu">
-                <div class="my-auto lg:hidden">
-                    <ul class="flex flex-wrap flex-col ">
-                        <li class="pb-5 text-center"><a class="text-pink-100 pb-2" href="">Home</a></li>
-                        <li class="pb-5 text-center"><a class="text-pink-100 pb-2" href="">About</a></li>
-                        <li class="pb-5 text-center"><a class="text-pink-100 pb-2" href="">Service</a></li>
-                        <li class="pb-5 text-center"><a class="text-pink-100 pb-2" href="">Contact</a></li>
-                        <li class="pb-5 text-center"><a class="text-pink-100 pb-2" href="">Projects</a></li>
+                </div>
+                <div class="hidden lg:flex">
+                    <ul class="flex flex-wrap">
+                        <li class="pr-10"><a class="text-sm text-gray-600" href="">Home</a></li>
+                        <li class="pr-10"><a class="text-sm text-gray-600" href="">About</a></li>
+                        <li class="pr-10"><a class="text-sm text-gray-600" href="">Services</a></li>
+                        <li class="pr-10"><a class="text-sm text-gray-600" href="">Portfolio</a></li>
+                        <li class="pr-10"><a class="text-sm text-gray-600" href="">Contact</a></li>
                     </ul>
                 </div>
             </div>
+            <div class="mt-3 hidden absolute mx-44 " id="mobileMenu">
+                <ul class="flex flex-wrap flex-col">
+                    <li class="lg:pr-10 pb-2 text-center"><a class="lg:text-sm text-xl text-gray-600" href="">Home</a></li>
+                    <li class="lg:pr-10 pb-2 text-center"><a class="lg:text-sm text-xl text-gray-600" href="">About</a></li>
+                    <li class="lg:pr-10 pb-2 text-center"><a class="lg:text-sm text-xl text-gray-600" href="">Services</a></li>
+                    <li class="lg:pr-10 pb-2 text-center"><a class="lg:text-sm text-xl text-gray-600" href="">Portfolio</a></li>
+                    <li class="lg:pr-10 pb-2 text-center"><a class="lg:text-sm text-xl text-gray-600" href="">Contact</a></li>
+                </ul>
+            </div>
         </div>
-        <div class="mt-10">
-            <div class="lg:flex">
-                <div class="lg:w-1/2 w-full">
-                    <div class="mt-10 text-7xl lg:text-9xl ml-10">
-                        <h1>
-                            Hey, Hi
-                        </h1>
-                        <h1>
-                            I'm
-                        </h1>
-                        <h1>
-                            David Lawrence
-                        </h1>
-                        <h1 class="mb-10">
-                            Software Developer
-                        </h1>
-                    </div>
+        <div class="lg:mt-32 mt-16 teko flex flex-wrap text-indigo-900">
+            <div class="lg:mt-20 lg:text-4xl lg:w-1/2 text-center lg:text-left mb-5">
+                <h1 class="text-xl lg:text-0xl">Software Developer</h1>
+                <h1 class="lg:text-9xl text-6xl mt-2">David Lawrence</h1>
+                <p class="lg:text-xl mt-3 lg:px-0 px-10">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Adipisci obcaecati magni quis nihil sint nobis facere corrupti dolore voluptatum! Minima est ratione rem accusantium? Distinctio, aliquid maiores. Aperiam, consequatur at!</p>
+                <button class="text-base my-auto mt-5 text-shadow bg-white rounded shadow-2xl">
+                    <h2 class="px-3 py-2 font-semibold text-black">view My CV</h2>
+                </button>
+            </div>
+            <div class="bg-blue-100 mt-0">
+               
+            </div>
+        </div>
+       </div>
+    </section>
+    <section class="bg-white mt-5">
+        <div class="container mx-auto text-indigo-800">
+            <div class="mt-24">
+                <div class="text-center pt-5">
+                    <h2 class="lg:text-4xl text-2xl font-bold mt-10">About Me</h2>
+                <p class="text-sm mt-3 lg:border-b-2 lg:border-black pb-5">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
                 </div>
-                <div class="lg:w-1/2  w-full flex justify-center">
-                    <img src="./assets/young-man-animation-style-illustration-free-photo.jpg" alt="" class="rounded-2xl">
+            </div>
+            <div class="mt-24">
+                <div>
+                    <h1 class="text-2xl">Developing With a Passion While Exploring The World.</h1>
+                </div>
+                <div class="mt-14">
+                   <div class="flex flex-warp justify-between">
+                    <div>
+                        <h1>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolorum eligendi laudantium laborum exercitationem. Iusto nam et modi quibusdam consequatur odio distinctio, asperiores perspiciatis eligendi minus nesciunt assumenda totam nulla eos.</h1>
+                        <h2>Lorem, ipsum dolor sit amet consectetur adipisicing elit.</h2>
+                    </div>
+                    <div>
+                        <h1>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolorum eligendi laudantium laborum exercitationem. Iusto nam et modi quibusdam consequatur odio distinctio, asperiores perspiciatis eligendi minus nesciunt assumenda totam nulla eos.</h1>
+                        <h2>Lorem, ipsum dolor sit amet consectetur adipisicing elit.</h2>
+                    </div>
+                    <div>
+                        <img src="./assets/young-man-animation-style-illustration-free-photo.jpg" alt="">
+                    </div>
+                   </div>
                 </div>
             </div>
         </div>
     </section>
-    <script src="./js/index.js"></script>
+    <script src="./js/index.js"> </script>
 </body>
 </html> 
