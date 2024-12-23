@@ -1,0 +1,125 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Merienda:wght@300..900&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Oswald", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 16px;
+}
+
+.dancing-script {
+  font-family: "Dancing Script", serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.merienda {
+  font-family: "Merienda", serif;
+  font-optical-sizing: auto;
+  font-weight: 700;
+  font-style: normal;
+}
+
+.box-shadow {
+
+  cursor: pointer;
+}
+
+.box-shadow:hover {
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px, rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
+}
+
+/* .category1 {
+  margin-bottom: 55px;
+} */
+
+.category1 {
+  .rectangle {
+    background: #FFE898;
+  }
+  
+  h3, span {
+    color: #DC3535;
+  }
+}
+
+.category2 {
+  .rectangle {
+    background: #FFE15D;
+  }
+  
+  h3, span {
+    color: #DC3535;
+  }
+}
+.category3 {
+  .rectangle {
+    background: #FD841F;
+  }
+  
+  h3, span {
+    color: #DC3535;
+  }
+}
+
+.rectangle {
+  float: left;
+	margin-right: 10px; 
+  height: 5px;
+	width: 0;
+  -webkit-transition: width 2s ease-in-out;
+  -moz-transition: width 2s ease-in-out;
+  -o-transition: width 2s ease-in-out;
+	transition: width 2s ease-in-out;
+}
+
+.bar {
+  h3 {
+    font-size: 20px;
+    margin-bottom: 0;
+    text-transform: uppercase;
+  }
+  
+  &:after {
+    display: table;
+		content: '';
+		clear: both;
+  }
+}
+
+.counter {
+  float: left;
+  font-size:20px;
+  top: 10px;
+  
+  &:before {
+			content:'$';
+			display: inline;
+		}
+}
+
+.grow {
+  .category1 .rectangle {
+			width: 84%;	
+	}
+
+	.category2 .rectangle {
+		width: 68%;	
+	}
+
+  .category3 .rectangle {
+		width: 50%;	
+	}
+  
+}
+

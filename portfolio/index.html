@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
+    <link href="./css/stylesheet.css" rel="stylesheet">
+    <title>David Lawrence</title>
+</head>
+
+<body>
+    <Header class="bg-yellow-200 p-3" id="Home">
+        <div class="flex flex-wrap justify-between">
+            <h1 class="text-2xl dancing-script">David Lawrence</h1>
+            <div>
+                <button class="lg:hidden" onclick="menuClick()">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                        stroke="currentColor" class="size-6 h-6 w-6">
+                        <path stroke-linecap="round" stroke-linejoin="round"
+                            d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
+                    </svg>
+                </button>
+                <ul class="lg:flex font-bold text-gray-600 lg:block hidden">
+                    <li class="px-2"><a class="text-yellow-900" href="#Home">Home</a></li>
+                    <li class="px-2"><a class="text-yellow-900" href="#About">About</a></li>
+                    <li class="px-2"><a class="text-yellow-900" href="#Service">Service</a></li>
+                    <li class="px-2"><a class="text-yellow-900" href="#Portfolio">Portfolio</a></li>
+                    <li class="px-2"><a class="text-yellow-900" href="#Contact">Contact</a></li>
+                </ul>
+            </div>
+
+        </div>
+    </Header>
+    <div class="hidden absolute" id="mobileMenu">
+        <ul class="lg:hidden font-bold text-yellow-600 lg:block my-2 border-2 border-grat-900 mr-3 float-right">
+            <li class="mt-1"><a class="py-3" href="">Home</a></li>
+            <li class="mt-1"><a class="py-3" href="">About</a></li>
+            <li class="mt-1"><a class="py-3" href="">Services</a></li>
+            <li class="mt-1"><a class="py-3" href="">Portfolio</a></li>
+            <li class="mt-1"><a class="py-3" href="">Contact</a></li>
+        </ul>
+    </div>
+    <section class="mt-10" id="About">
+        <div class="container mx-auto">
+            <div class="lg:flex flex-wrap">
+                <div class="lg:w-3/4 w-auto">
+                    <div class="p-5 lg:mt-40 text-center lg:text-left">
+                        <h5 class="lg:text-4xl">Hi I'm</h5>
+                        <h1 class="lg:text-8xl text-4xl merienda mt-3">David Lawrence</h1>
+                        <h6 class="lg:text-3xl mt-2">Software Developer</h6>
+                        <div class="mt-8">
+                            <a href="https://wa.me/7825949141"
+                                class="px-4 py-2 bg-yellow-200 text-yellow-900 font-semibold rounded">Hire Me</a>
+                            <a href="./assest/David Lawrence CV.pdf"
+                                class="px-4 py-2 border border-yellow-400 text-yellow-500 rounded ml-5">View CV</a>
+                        </div>
+                        <ul class="flex flex-wrap justify-center lg:justify-start mt-8 mb-10">
+                            <li class="px-2"><a href="www.linkedin.com/in/david-lawrence-5aa64b315">
+                                    <svg xmlns="http://www.w3.org/2000/svg" class="w-7 h-7"
+                                        viewBox="0 0 448 512"><!--!Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.-->
+                                        <path
+                                            d="M416 32H31.9C14.3 32 0 46.5 0 64.3v383.4C0 465.5 14.3 480 31.9 480H416c17.6 0 32-14.5 32-32.3V64.3c0-17.8-14.4-32.3-32-32.3zM135.4 416H69V202.2h66.5V416zm-33.2-243c-21.3 0-38.5-17.3-38.5-38.5S80.9 96 102.2 96c21.2 0 38.5 17.3 38.5 38.5 0 21.3-17.2 38.5-38.5 38.5zm282.1 243h-66.4V312c0-24.8-.5-56.7-34.5-56.7-34.6 0-39.9 27-39.9 54.9V416h-66.4V202.2h63.7v29.2h.9c8.9-16.8 30.6-34.5 62.9-34.5 67.2 0 79.7 44.3 79.7 101.9V416z" />
+                                    </svg> </a></li>
+                            <li class="px-2"><a href="https://wa.me/7825949141">
+                                    <svg xmlns="http://www.w3.org/2000/svg" class="w-7 h-7"
+                                        viewBox="0 0 448 512"><!--!Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.-->
+                                        <path
+                                            d="M380.9 97.1C339 55.1 283.2 32 223.9 32c-122.4 0-222 99.6-222 222 0 39.1 10.2 77.3 29.6 111L0 480l117.7-30.9c32.4 17.7 68.9 27 106.1 27h.1c122.3 0 224.1-99.6 224.1-222 0-59.3-25.2-115-67.1-157zm-157 341.6c-33.2 0-65.7-8.9-94-25.7l-6.7-4-69.8 18.3L72 359.2l-4.4-7c-18.5-29.4-28.2-63.3-28.2-98.2 0-101.7 82.8-184.5 184.6-184.5 49.3 0 95.6 19.2 130.4 54.1 34.8 34.9 56.2 81.2 56.1 130.5 0 101.8-84.9 184.6-186.6 184.6zm101.2-138.2c-5.5-2.8-32.8-16.2-37.9-18-5.1-1.9-8.8-2.8-12.5 2.8-3.7 5.6-14.3 18-17.6 21.8-3.2 3.7-6.5 4.2-12 1.4-32.6-16.3-54-29.1-75.5-66-5.7-9.8 5.7-9.1 16.3-30.3 1.8-3.7 .9-6.9-.5-9.7-1.4-2.8-12.5-30.1-17.1-41.2-4.5-10.8-9.1-9.3-12.5-9.5-3.2-.2-6.9-.2-10.6-.2-3.7 0-9.7 1.4-14.8 6.9-5.1 5.6-19.4 19-19.4 46.3 0 27.3 19.9 53.7 22.6 57.4 2.8 3.7 39.1 59.7 94.8 83.8 35.2 15.2 49 16.5 66.6 13.9 10.7-1.6 32.8-13.4 37.4-26.4 4.6-13 4.6-24.1 3.2-26.4-1.3-2.5-5-3.9-10.5-6.6z" />
+                                    </svg>
+                                </a></li>
+                            <li class="px-2"><a href="https://www.instagram.com/davidlawrence_281">
+                                    <svg xmlns="http://www.w3.org/2000/svg" class="w-7 h-7"
+                                        viewBox="0 0 448 512"><!--!Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.-->
+                                        <path
+                                            d="M224.1 141c-63.6 0-114.9 51.3-114.9 114.9s51.3 114.9 114.9 114.9S339 319.5 339 255.9 287.7 141 224.1 141zm0 189.6c-41.1 0-74.7-33.5-74.7-74.7s33.5-74.7 74.7-74.7 74.7 33.5 74.7 74.7-33.6 74.7-74.7 74.7zm146.4-194.3c0 14.9-12 26.8-26.8 26.8-14.9 0-26.8-12-26.8-26.8s12-26.8 26.8-26.8 26.8 12 26.8 26.8zm76.1 27.2c-1.7-35.9-9.9-67.7-36.2-93.9-26.2-26.2-58-34.4-93.9-36.2-37-2.1-147.9-2.1-184.9 0-35.8 1.7-67.6 9.9-93.9 36.1s-34.4 58-36.2 93.9c-2.1 37-2.1 147.9 0 184.9 1.7 35.9 9.9 67.7 36.2 93.9s58 34.4 93.9 36.2c37 2.1 147.9 2.1 184.9 0 35.9-1.7 67.7-9.9 93.9-36.2 26.2-26.2 34.4-58 36.2-93.9 2.1-37 2.1-147.8 0-184.8zM398.8 388c-7.8 19.6-22.9 34.7-42.6 42.6-29.5 11.7-99.5 9-132.1 9s-102.7 2.6-132.1-9c-19.6-7.8-34.7-22.9-42.6-42.6-11.7-29.5-9-99.5-9-132.1s-2.6-102.7 9-132.1c7.8-19.6 22.9-34.7 42.6-42.6 29.5-11.7 99.5-9 132.1-9s102.7-2.6 132.1 9c19.6 7.8 34.7 22.9 42.6 42.6 11.7 29.5 9 99.5 9 132.1s2.7 102.7-9 132.1z" />
+                                    </svg>
+                                </a></li>
+                            <li class="px-2"><a href="https://github.com/lawrence281">
+                                    <svg xmlns="http://www.w3.org/2000/svg" class="w-7 h-7"
+                                        viewBox="0 0 496 512"><!--!Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.-->
+                                        <path
+                                            d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3 .3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6zm-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5 .3-6.2 2.3zm44.2-1.7c-2.9 .7-4.9 2.6-4.6 4.9 .3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9zM244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8zM97.2 352.9c-1.3 1-1 3.3 .7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1zm-10.8-8.1c-.7 1.3 .3 2.9 2.3 3.9 1.6 1 3.6 .7 4.3-.7 .7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3 .7zm32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3 .7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1zm-11.4-14.7c-1.6 1-1.6 3.6 0 5.9 1.6 2.3 4.3 3.3 5.6 2.3 1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2z" />
+                                    </svg>
+                                </a></li>
+                            <li class="px-2"><a href="mailto:lawrencedavid2810@gmail.com">
+                                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                                        stroke-width="1.5" stroke="currentColor" class="w-7 h-7">
+                                        <path stroke-linecap="round" stroke-linejoin="round"
+                                            d="M21.75 6.75v10.5a2.25 2.25 0 0 1-2.25 2.25h-15a2.25 2.25 0 0 1-2.25-2.25V6.75m19.5 0A2.25 2.25 0 0 0 19.5 4.5h-15a2.25 2.25 0 0 0-2.25 2.25m19.5 0v.243a2.25 2.25 0 0 1-1.07 1.916l-7.5 4.615a2.25 2.25 0 0 1-2.36 0L3.32 8.91a2.25 2.25 0 0 1-1.07-1.916V6.75" />
+                                    </svg>
+                                </a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="p-5 lg:w-1/4 w-auto">
+                    <img src="./assest/wmremove-transformed-removebg-preview.png" alt="" width="1000">
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="mt-24 p-5" id="">
+        <div class="flex flex-wrap">
+            <div class="lg:w-1/4 w-full">
+                <img src="./assest/IMG_20241024_084048.jpg" alt="" width="250"
+                    class="mx-auto p-2 rounded border border-gray-400">
+            </div>
+            <div class="lg:w-3/4 w-full">
+                <div class="p-10">
+                    <h1 class="text-4xl">Who Am I?</h1>
+                    <h2 class="text-2xl mt-3" id="About">I am <span class="text-yellow-600">David Lawrence</span></h2>
+                    <p class="mt-1 text-gray-600">
+                        I am a software developer with extensive experience in
+                        designing and building dynamic, responsive web applications. I am deeply committed to continuous
+                        learning and thrive on transforming complex challenges into innovative solutions that are both
+                        functional and user-centric.
+                        <br>
+                        Over the years, I have had the privilege of contributing to a diverse range of projects, which
+                        have allowed me to refine my technical expertise and broaden my understanding of the field. I am
+                        passionate about staying at the forefront of technological advancements and am always eager to
+                        explore emerging tools and trends to deliver impactful solutions.
+                        <br>
+                        I am now seeking freelance opportunities to gain new experiences and further expand my knowledge
+                        in business and technology. My goal is to provide exceptional services to clients while
+                        contributing to their business growth. By collaborating with diverse clients, I aim to explore
+                        innovative solutions and drive mutual success in the ever-evolving technological landscape.
+                        <br>
+                        Actively participated in the design and development of web applications, prioritizing
+                        user-friendly interfaces.
+
+
+                    </p>
+                    <div class="mt-10 lg:float-right float-center mb-10">
+                        <a href="./assest/David Lawrence CV.pdf" class="bg-yellow-200 rounded py-2 px-3">Download CV</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="mt-10 p-5 bg-yellow-300">
+        <div class="mt-5 text-center">
+            <div class="text-white">
+                <h1 class="text-xl">Our Service</h1>
+                <h2 class="text-4xl">What I Do</h2>
+                <p>Transform and Bring Your Unique Vision to Life Today.</p>
+            </div>
+            <div class="flex flex-wrap mt-10 lg:mt-24 mb-24">
+                <div class="lg:w-1/4 w-full mx-auto rounded mt-5 lg:mt-0 box-shadow bg-white">
+
+                    <div>
+                        <h1 class="p-7"><svg xmlns="http://www.w3.org/2000/svg" class="w-12 h-12 mx-auto"
+                                viewBox="0 0 512 512"><!--!Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.-->
+                                <path
+                                    d="M512 256c0 .9 0 1.8 0 2.7c-.4 36.5-33.6 61.3-70.1 61.3L344 320c-26.5 0-48 21.5-48 48c0 3.4 .4 6.7 1 9.9c2.1 10.2 6.5 20 10.8 29.9c6.1 13.8 12.1 27.5 12.1 42c0 31.8-21.6 60.7-53.4 62c-3.5 .1-7 .2-10.6 .2C114.6 512 0 397.4 0 256S114.6 0 256 0S512 114.6 512 256zM128 288a32 32 0 1 0 -64 0 32 32 0 1 0 64 0zm0-96a32 32 0 1 0 0-64 32 32 0 1 0 0 64zM288 96a32 32 0 1 0 -64 0 32 32 0 1 0 64 0zm96 96a32 32 0 1 0 0-64 32 32 0 1 0 0 64z" />
+                            </svg></h1>
+                        <h1 class="text-2xl mb-5">UI/UX</h1>
+                    </div>
+
+                </div>
+                <div class="lg:w-1/4 w-full rounded  mt-5 lg:mt-0  mx-auto box-shadow bg-white">
+                    <div>
+                        <h1 class="p-7"><svg xmlns="http://www.w3.org/2000/svg" class="w-12 h-12 mx-auto"
+                                viewBox="0 0 640 512"><!--!Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.-->
+                                <path
+                                    d="M384 96l0 224L64 320 64 96l320 0zM64 32C28.7 32 0 60.7 0 96L0 320c0 35.3 28.7 64 64 64l117.3 0-10.7 32L96 416c-17.7 0-32 14.3-32 32s14.3 32 32 32l256 0c17.7 0 32-14.3 32-32s-14.3-32-32-32l-74.7 0-10.7-32L384 384c35.3 0 64-28.7 64-64l0-224c0-35.3-28.7-64-64-64L64 32zm464 0c-26.5 0-48 21.5-48 48l0 352c0 26.5 21.5 48 48 48l64 0c26.5 0 48-21.5 48-48l0-352c0-26.5-21.5-48-48-48l-64 0zm16 64l32 0c8.8 0 16 7.2 16 16s-7.2 16-16 16l-32 0c-8.8 0-16-7.2-16-16s7.2-16 16-16zm-16 80c0-8.8 7.2-16 16-16l32 0c8.8 0 16 7.2 16 16s-7.2 16-16 16l-32 0c-8.8 0-16-7.2-16-16zm32 160a32 32 0 1 1 0 64 32 32 0 1 1 0-64z" />
+                            </svg></h1>
+                        <h1 class="text-2xl mb-5">Web Developement</h1>
+                    </div>
+                </div>
+                <div class="lg:w-1/4 w-full rounded mt-5 lg:mt-0 mx-auto box-shadow bg-white">
+                    <div>
+                        <h1 class="p-7"><svg xmlns="http://www.w3.org/2000/svg" class="w-12 h-12 mx-auto"
+                                viewBox="0 0 384 512"><!--!Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.-->
+                                <path
+                                    d="M16 64C16 28.7 44.7 0 80 0L304 0c35.3 0 64 28.7 64 64l0 384c0 35.3-28.7 64-64 64L80 512c-35.3 0-64-28.7-64-64L16 64zM144 448c0 8.8 7.2 16 16 16l64 0c8.8 0 16-7.2 16-16s-7.2-16-16-16l-64 0c-8.8 0-16 7.2-16 16zM304 64L80 64l0 320 224 0 0-320z" />
+                            </svg></h1>
+                        <h1 class="text-2xl mb-5">Mobile Developement</h1>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+    <section class="mt-10 p-5 mb-20">
+        <div>
+            <div class="text-center">
+                <h1 class="text-xl">Skills</h1>
+                <h1 class="text-4xl">Why choose Me</h1>
+                <p class="mt-2">Skilled Expertise and Cutting-Edge Technical Tools.</p>
+            </div>
+            <div class="container mx-auto">
+                <div class="my-10">
+                    <div class="graph flex flex-wrap justify-between container mx-auto">
+                        <div class="bar category1 lg:w-1/2 w-full mt-5">
+                            <h3>Web Developement</h3>
+                            <div class="rectangle"></div>
+
+                        </div>
+                        <div class="bar category2 lg:w-1/2 w-full mt-5">
+                            <h3>Mobile Developement</h3>
+                            <div class="rectangle"></div>
+
+                        </div>
+                        <div class="bar category3 lg:w-1/2 w-full mt-5">
+                            <h3>UI/UX</h3>
+                            <div class="rectangle"></div>
+
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="mt-10 mb-10 p-5" id="Portfolio">
+        <div>
+            <div class="text-center">
+                <h1 class="text-xl">Portfolio</h1>
+                <h1 class="text-4xl">Check My Worderful Works</h1>
+                <p>Explore the amazing possibilities I can design and build to elevate your ideas and projects.</p>
+            </div>
+            <div class="mt-24 flex flex-wrap">
+                <div class="lg:w-1/4 w-full mx-auto p-5">
+                    <div class="p-2">
+                        <div>
+                            <div>
+                                
+                            </div>
+                            <h1 class="text-center"> <a href="https://mahendran-programmer.github.io/Fruitables/" target="_blank"><i
+                                        class='bx bx-link-external'><img src="../assest/fruits.png" alt="" width="200" class="mx-auto"></i></a></h1>
+                        </div>
+                    </div>
+                </div>
+                <div class="lg:w-1/4 w-full mx-auto p-5">
+                    <div class="p-2">
+                        <div>
+                            <div>
+                                
+                            </div>
+                            <h1 class="text-center">
+                                <a href="https://mahendran-programmer.github.io/Age-Calculator/" target="_blank"><i
+                                    class='bx bx-link-external'><img src="../assest/age-calculator.png" alt="" width="200" class="mx-auto"></i></a>
+                            </h1>
+                        </div>
+                    </div>
+                </div>
+                <div class="lg:w-1/4 w-full mx-auto p-5">
+                    <div class="p-2">
+                        <div>
+                            <h1 class="">
+                                <a href="https://lawrence281.github.io/David-Agency/" target="_blank"><i
+                                    class='bx bx-link-external'><img src="../assest/David-Agency.png" alt="" width="300"></i></a>
+                            </h1>
+                        </div>
+                    </div>
+                </div>
+                <div class="lg:w-1/4 w-full mx-auto p-5">
+                    <div class="p-2">
+                        <div>
+                            <div><img src="" alt=""></div>
+                            <h1><a href="https://mahendran-programmer.github.io/Agency-Sample/" target="_blank"><i
+                                class='bx bx-link-external'><img src="../assest/responsive.png" width="200" class="mx-auto" alt=""></i></a></h1>
+                        </div>
+                        
+                    </div>
+                </div>
+            </div>
+            <!-- <div class="mt-5 text-center">
+                <h1><a href="../page/Portfolio.html">See More..</a></h1>
+            </div> -->
+        </div>
+    </section>
+    <section class="mt-10 p-5  bg-yellow-400 rounded container mx-auto mb-10">
+        <div class="flex flex-wrap justify-between">
+            <div class="text-white">
+                <h1 class="text-2xl">Hire Me For Your Project</h1>
+                <p>Need help with your project? Hire me, and let's work together to bring your ideas to life with skill
+                    and passion.</p>
+            </div>
+            <div class="lg:my-auto my-4 cursor-pointer">
+                <a href="https://wa.me/7825949141" class="bg-white rounded px-5 py-2 text-yellow-500">Hire Me!</a>
+            </div>
+        </div>
+    </section>
+    <section class="mt-10 mb-10" id="Contact">
+        <div class="text-center mt-24">
+            <h1 class="text-xl">Contact</h1>
+            <h2 class="text-4xl">Get In Touch with Me</h2>
+            <p class="lg:p-0 p-6 mt-2">Can’t wait to hear what you’re working on! Whether it’s a question or just to
+                chat, feel free to get in touch.!</p>
+        </div>
+        <div class="flex flex-wrap justify-center lg:mt-10">
+            <div class="border border-yellow-400 lg:w-1/2 w-full lg:mx-0 mx-2 rounded">
+                <div class="p-8">
+                    <div>
+                        <h1 class="text-2xl"> Reach out, and let’s start something great! </h1>
+                        <div class="flex flex-wrap flex-col mt-4">
+                            <form action="https://api.web3forms.com/submit" method="post" id="contactForm" class="flex flex-wrap flex-col mt-4">
+                                <input type="hidden" name="access_key" value="4ee31217-52dc-4f39-93db-ec9e98ad7ed9">
+                                <input type="email" id="email" class="bg-yellow-200 mt-2 p-3 rounded"
+                                    placeholder="Email">
+                                <input type="text" id="name" class="bg-yellow-200 mt-5 p-3 rounded" placeholder="Name">
+                                <textarea name="Message" id="message" class="bg-yellow-200 mt-5 p-3 rounded" id=""
+                                    placeholder="Message"></textarea>
+                                <input type="submit" class="mt-5 py-3 rounded cursor-pointer" name="" id=""
+                                    value="Send Message">
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </section>
+    <footer class="mt-5 bg-yellow-200 p-3">
+        <div class="text-center">
+            <h1>Copyright 2024 © <span class="text-yellow-800 mr-1">David Lawrence</span>| All Rights Reserved</h1>
+        </div>
+    </footer>
+    
+    <script>
+        function menuClick() {
+            var menu = document.getElementById("mobileMenu");
+            if (menu.classList.contains("hidden")) {
+                menu.classList.remove("hidden");
+            } else {
+                menu.classList.add("hidden");
+            }
+        }
+    </script>
+    <script src="./js/index.js"></script>
+</body>
+
+</html>
